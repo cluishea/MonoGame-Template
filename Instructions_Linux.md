@@ -52,3 +52,5 @@ dotnet restore
 dotnet build
 dotnet run
 ```
+
+If the error `/usr/lib/dotnet/sdk/8.0.122/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets(166,5): error NETSDK1045: The current .NET SDK does not support targeting .NET 9.0.  Either target .NET 8.0 or lower, or use a version of the .NET SDK that supports .NET 9.0. Download the .NET SDK from https://aka.ms/dotnet/download ` is obtained, replace `net9.0` with `net8.0` in `MyGame.csproj` file in the project.
