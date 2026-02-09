@@ -9,14 +9,14 @@ To install Visual Studio Code, just install it using a Software package applicat
 To code with MonoGame, the .NET software development kit should be installed.
 
 First, the repository is updated:
-```
+```sh
 sudo apt update
 sudo apt upgrade
 ```
 
 Installing the .NET SDK (Software Development Kit)
 
-```
+```sh
 sudo apt install dotnet-sdk-8.0
 
 dotnet --version
@@ -24,13 +24,13 @@ dotnet --version
 
 Installing the MonoGame templates
 
-```
+```sh
 dotnet new install MonoGame.Templates.CSharp
 dotnet new --list | grep MonoGame
 ```
 
 Installing the MGCB Editor
-```
+```sh
 dotnet tool install --global dotnet-mgcb-editor
 export PATH="$PATH:$HOME/.dotnet/tools"
 
@@ -38,7 +38,7 @@ mgcb-editor Content/Content.mgcb   # Open the editor
 ```
 
 Creating a project
-```
+```sh
 dotnet new mgdesktopgl -n MyGame
 cd MyGame
 
@@ -47,7 +47,7 @@ code .     # To go to Visual Studio Code
 ```
 
 Building and running the project
-```
+```sh
 dotnet restore
 dotnet build
 dotnet run
